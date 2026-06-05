@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDISHORT360 - Calculadoras Médicas Profesionales</title>
+    <link rel="stylesheet" href="styles-v2.css">
+</head>
+<body>
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-section">
+                <img src="LOGO21.jpeg" alt="MEDISHORT360" class="logo-img">
+                <div class="brand-text">
+                    <h1 class="brand-name">MEDISHORT360</h1>
+                    <p class="brand-tagline">Soluciones de Cálculo Clínico</p>
+                </div>
+            </div>
+            <nav class="nav">
+                <a href="#productos" class="nav-link">Productos</a>
+                <a href="#galeria" class="nav-link">Galería</a>
+                <a href="#precios" class="nav-link">Precios</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </nav>
+            <div class="social-quick">
+                <a href="https://tiktok.com/@medishort360" target="_blank" class="tiktok-icon">
+                    🎵 TikTok
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">MS360-ENF</h2>
+            <p class="hero-subtitle">Suite Completa de Calculadoras para Enfermería</p>
+            <p class="hero-description">
+                4 herramientas esenciales integradas en una sola aplicación.
+                <br>
+                <strong>Cálculos rápidos. Precisión clínica. Diseño profesional.</strong>
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollTo('precios')">Ver Precios</button>
+                <button class="btn btn-secondary" onclick="window.open('https://tiktok.com/@medishort360', '_blank')">
+                    Ver en TikTok
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CARRUSEL DE PRODUCTOS ===== -->
+    <section id="productos" class="productos">
+        <div class="container">
+            <h2 class="section-title">Nuestros Productos</h2>
+            <p class="section-subtitle">Soluciones específicas para cada necesidad clínica</p>
+
+            <div class="carousel-container">
+                <button class="carousel-btn prev" onclick="prevSlide()">❮</button>
+                
+                <div class="carousel-wrapper">
+                    <div class="carousel">
+                        <!-- Producto 1: MS360-UCI -->
+                        <div class="carousel-slide">
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="FORM1.jpeg" alt="MS360-UCI">
+                                </div>
+                                <h3 class="product-name">MS360-UCI</h3>
+                                <p class="product-tagline">Balance Hídrico · UCI / Hospitalización</p>
+                                <p class="product-description">
+                                    Fórmulas esenciales para cálculos críticos en UCI.
+                                    Agua endógena, peso predictivo, IMC, superficie corporal.
+                                </p>
+                                <div class="product-price">$3.00</div>
+                                <button class="btn btn-sm" onclick="scrollTo('precios')">Más info</button>
+                            </div>
+                        </div>
+
+                        <!-- Producto 2: MS360-ASPA -->
+                        <div class="carousel-slide">
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="ASPA1.jpeg" alt="MS360-ASPA">
+                                </div>
+                                <h3 class="product-name">MS360-ASPA</h3>
+                                <p class="product-tagline">Conversión de Soluciones · Diluciones IV</p>
+                                <p class="product-description">
+                                    Transforma porcentajes de soluciones salinas y dextrosa.
+                                    Cálculos ASPA precisos y verificados.
+                                </p>
+                                <div class="product-price">$3.00</div>
+                                <button class="btn btn-sm" onclick="scrollTo('precios')">Más info</button>
+                            </div>
+                        </div>
+
+                        <!-- Producto 3: MS360-X3 -->
+                        <div class="carousel-slide">
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <div class="placeholder-image">
+                                        <span>MS360-X3</span>
+                                        <p>Cálculo de Dosis</p>
+                                    </div>
+                                </div>
+                                <h3 class="product-name">MS360-X3</h3>
+                                <p class="product-tagline">Cálculo de Dosis · Presentaciones</p>
+                                <p class="product-description">
+                                    Calcula dosis exactas de medicamentos.
+                                    Regla de tres automática. Presenta resultados en mL.
+                                </p>
+                                <div class="product-price">$3.00</div>
+                                <button class="btn btn-sm" onclick="scrollTo('precios')">Más info</button>
+                            </div>
+                        </div>
+
+                        <!-- Producto 4: MS360-% -->
+                        <div class="carousel-slide">
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <div class="placeholder-image">
+                                        <span>MS360-%</span>
+                                        <p>Cálculo de Porcentajes</p>
+                                    </div>
+                                </div>
+                                <h3 class="product-name">MS360-%</h3>
+                                <p class="product-tagline">Cálculo de Porcentajes · Medicamentos</p>
+                                <p class="product-description">
+                                    Convierte presentaciones en porcentaje a gramos.
+                                    Cálculos precisos para medicinas concentradas.
+                                </p>
+                                <div class="product-price">$3.00</div>
+                                <button class="btn btn-sm" onclick="scrollTo('precios')">Más info</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-btn next" onclick="nextSlide()">❯</button>
+            </div>
+
+            <div class="carousel-indicators">
+                <span class="indicator active" onclick="goToSlide(0)"></span>
+                <span class="indicator" onclick="goToSlide(1)"></span>
+                <span class="indicator" onclick="goToSlide(2)"></span>
+                <span class="indicator" onclick="goToSlide(3)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== GALERÍA DE SCREENSHOTS ===== -->
+    <section id="galeria" class="galeria">
+        <div class="container">
+            <h2 class="section-title">Galería de Aplicaciones</h2>
+            <p class="section-subtitle">Interfaz profesional y diseño intuitivo</p>
+
+            <div class="gallery-grid">
+                <!-- Screenshot 1 -->
+                <div class="gallery-item">
+                    <img src="ASPA1.jpeg" alt="MS360-ASPA Interfaz">
+                    <div class="gallery-overlay">
+                        <h3>MS360-ASPA</h3>
+                        <p>Cálculos de Diluciones</p>
+                    </div>
+                </div>
+
+                <!-- Screenshot 2 -->
+                <div class="gallery-item">
+                    <img src="ASPA2.jpeg" alt="MS360-ASPA Resultados">
+                    <div class="gallery-overlay">
+                        <h3>MS360-ASPA</h3>
+                        <p>Método ASPA Verificado</p>
+                    </div>
+                </div>
+
+                <!-- Screenshot 3 -->
+                <div class="gallery-item">
+                    <img src="FORM1.jpeg" alt="MS360-UCI Datos">
+                    <div class="gallery-overlay">
+                        <h3>MS360-UCI</h3>
+                        <p>Datos del Paciente</p>
+                    </div>
+                </div>
+
+                <!-- Screenshot 4 -->
+                <div class="gallery-item">
+                    <img src="FORM2.jpeg" alt="MS360-UCI Balance">
+                    <div class="gallery-overlay">
+                        <h3>MS360-UCI</h3>
+                        <p>Balance Hídrico Completo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECCIÓN DE CARACTERÍSTICAS ===== -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">¿Por qué elegir MEDISHORT360?</h2>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">✓</div>
+                    <h3>Precisión Clínica</h3>
+                    <p>Basadas en protocolos clínicos establecidos y fórmulas validadas.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Velocidad</h3>
+                    <p>Resultados instantáneos. Más tiempo para el paciente.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Diseño Profesional</h3>
+                    <p>Interfaz moderna y fácil de usar. Diseñado por enfermeros.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Accesibilidad</h3>
+                    <p>Disponible en tu dispositivo móvil, siempre a mano.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Actualizaciones</h3>
+                    <p>Mejoras continuas basadas en feedback de usuarios.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Confiable</h3>
+                    <p>Herramienta educativa respaldada por profesionales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECCIÓN DE PRECIOS ===== -->
+    <section id="precios" class="precios">
+        <div class="container">
+            <h2 class="section-title">Planes y Precios</h2>
+            <p class="section-subtitle">Elige la opción que mejor se adapte a tus necesidades</p>
+
+            <div class="pricing-grid">
+                <!-- Plan Bundle -->
+                <div class="pricing-card featured">
+                    <div class="badge">RECOMENDADO</div>
+                    <h3>MS360-ENF Bundle</h3>
+                    <p class="plan-description">Suite Completa · 4 Herramientas</p>
+                    <div class="price">
+                        <span class="amount">$6.00</span>
+                        <span class="period">de por vida</span>
+                    </div>
+                    <ul class="features-list">
+                        <li>✓ MS360-UCI</li>
+                        <li>✓ MS360-ASPA</li>
+                        <li>✓ MS360-X3</li>
+                        <li>✓ MS360-%</li>
+                        <li>✓ Actualizaciones gratis</li>
+                    </ul>
+                    <button class="btn btn-primary btn-lg" onclick="buyProduct('ms360-enf')">
+                        Comprar Bundle - $6.00
+                    </button>
+                </div>
+
+                <!-- Plan Individual 1 -->
+                <div class="pricing-card">
+                    <h3>MS360-UCI</h3>
+                    <p class="plan-description">Balance Hídrico · UCI</p>
+                    <div class="price">
+                        <span class="amount">$3.00</span>
+                        <span class="period">de por vida</span>
+                    </div>
+                    <ul class="features-list">
+                        <li>✓ Fórmulas UCI completas</li>
+                        <li>✓ Cálculos de balance</li>
+                        <li>✓ Interfaz intuitiva</li>
+                        <li>✓ Actualizaciones</li>
+                    </ul>
+                    <button class="btn btn-secondary btn-lg" onclick="buyProduct('ms360-uci')">
+                        Comprar - $3.00
+                    </button>
+                </div>
+
+                <!-- Plan Individual 2 -->
+                <div class="pricing-card">
+                    <h3>MS360-ASPA</h3>
+                    <p class="plan-description">Conversión de Soluciones</p>
+                    <div class="price">
+                        <span class="amount">$3.00</span>
+                        <span class="period">de por vida</span>
+                    </div>
+                    <ul class="features-list">
+                        <li>✓ Método ASPA</li>
+                        <li>✓ Diluciones IV</li>
+                        <li>✓ Cálculos verificados</li>
+                        <li>✓ Actualizaciones</li>
+                    </ul>
+                    <button class="btn btn-secondary btn-lg" onclick="buyProduct('ms360-aspa')">
+                        Comprar - $3.00
+                    </button>
+                </div>
+
+                <!-- Plan Individual 3 -->
+                <div class="pricing-card">
+                    <h3>MS360-X3</h3>
+                    <p class="plan-description">Cálculo de Dosis</p>
+                    <div class="price">
+                        <span class="amount">$3.00</span>
+                        <span class="period">de por vida</span>
+                    </div>
+                    <ul class="features-list">
+                        <li>✓ Regla de tres automática</li>
+                        <li>✓ Presentaciones variables</li>
+                        <li>✓ Resultados en mL</li>
+                        <li>✓ Actualizaciones</li>
+                    </ul>
+                    <button class="btn btn-secondary btn-lg" onclick="buyProduct('ms360-x3')">
+                        Comprar - $3.00
+                    </button>
+                </div>
+            </div>
+
+            <!-- Métodos de Pago -->
+            <div class="payment-methods">
+                <h3>Métodos de Pago Disponibles</h3>
+                <div class="payment-options">
+                    <!-- Método 1 - EDITABLE -->
+                    <div class="payment-card">
+                        <div class="payment-placeholder">
+                            <p>💳 Método de Pago 1</p>
+                            <small>Por confirmar (Probablemente MercadoPago)</small>
+                            <p class="edit-note">📝 Editable en código</p>
+                        </div>
+                    </div>
+
+                    <!-- Método 2 - EDITABLE -->
+                    <div class="payment-card">
+                        <div class="payment-placeholder">
+                            <p>💰 Método de Pago 2</p>
+                            <small>Por confirmar</small>
+                            <p class="edit-note">📝 Editable en código</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="payment-note">
+                    Los métodos de pago serán confirmados próximamente. 
+                    <br>
+                    <strong>Contacta:</strong> onlyfreetime1992@gmail.com
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIOS ===== -->
+    <section class="testimonios">
+        <div class="container">
+            <h2 class="section-title">Lo que dicen nuestros usuarios</h2>
+
+            <div class="testimonios-grid">
+                <div class="testimonio-card">
+                    <p class="testimonio-text">
+                        "Herramienta excelente. Resuelve cálculos en segundos. 
+                        Muy útil en la práctica clínica diaria."
+                    </p>
+                    <p class="testimonio-author">- Enfermero/a Hospitalario</p>
+                </div>
+
+                <div class="testimonio-card">
+                    <p class="testimonio-text">
+                        "Como estudiante, me ayuda a entender las fórmulas 
+                        y verificar mis cálculos de forma rápida."
+                    </p>
+                    <p class="testimonio-author">- Estudiante de Enfermería</p>
+                </div>
+
+                <div class="testimonio-card">
+                    <p class="testimonio-text">
+                        "Interfaz simple pero potente. Exactamente lo que 
+                        necesitaba para trabajo en UCI."
+                    </p>
+                    <p class="testimonio-author">- Enfermero/a UCI</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECCIÓN SOCIAL ===== -->
+    <section class="social-section">
+        <div class="container">
+            <h2 class="section-title">Síguenos en TikTok</h2>
+            <p class="section-subtitle">Contenido educativo y tutoriales de nuestras calculadoras</p>
+
+            <div class="social-content">
+                <p>
+                    Descubre cómo usar nuestras herramientas con videos educativos, 
+                    ejercicios resueltos y tips clínicos.
+                </p>
+                <a href="https://tiktok.com/@medishort360" target="_blank" class="btn btn-primary btn-lg">
+                    📱 Seguir @medishort360 en TikTok
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section id="contacto" class="contacto">
+        <div class="container">
+            <h2 class="section-title">¿Preguntas o Sugerencias?</h2>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>📧 Email</h3>
+                    <a href="mailto:onlyfreetime1992@gmail.com">onlyfreetime1992@gmail.com</a>
+                </div>
+
+                <div class="contact-item">
+                    <h3>🎵 TikTok</h3>
+                    <a href="https://tiktok.com/@medishort360" target="_blank">@medishort360</a>
+                </div>
+
+                <div class="contact-item">
+                    <h3>📱 Canal</h3>
+                    <p>MEDISHORT360</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 MEDISHORT360. Todos los derechos reservados.</p>
+            <p class="small">Herramienta educativa. Siempre consulta protocolos clínicos establecidos.</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPT EXTERNO -->
+    <script src="script-v2.js"></script>
+</body>
+</html>
