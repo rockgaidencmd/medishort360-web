@@ -153,8 +153,10 @@ mutationObserver.observe(document.body, { childList: true, subtree: true });
 // Asegura que los links de pago/WhatsApp sean legítimos antes de abrirlos
 const LINKS_PERMITIDOS = [
     'https://wa.me/593986198167',
-    'https://ppls.me/JfqBhPiaw5CrPw1ZuP2qw',  // App individual $3
-    'https://ppls.me/C8Mkd4YhjTiouOVvw4SIQ'   // Bundle $6
+    'https://ppls.me/JfqBhPiaw5CrPw1ZuP2qw',  // Calculadora suelta $3
+    'https://ppls.me/ZmbCNAfTWjsgxYjv4LZKA',  // Vademécum $4
+    'https://ppls.me/GrpRjinxXMzK19D32aoCWw', // App Maestra $4
+    'https://ppls.me/2kslSkfcPYXDMi6meCPIrA'  // Pack Total $5
 ];
 
 document.querySelectorAll('a[href*="wa.me"], a[href*="ppls.me"]').forEach(link => {
