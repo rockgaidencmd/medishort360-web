@@ -1143,6 +1143,65 @@ h1,h2,h3 { font-family: 'Space Grotesk', sans-serif; line-height: 1.2; }
     color: var(--text-dim);
 }
 
+/* ===== BINANCE PAY ===== */
+.binance-box {
+    display: grid;
+    grid-template-columns: 170px 1fr;
+    gap: 24px;
+    align-items: center;
+    margin-top: 24px;
+    padding: 24px;
+    background: rgba(240,185,11,0.05);
+    border: 1px solid rgba(240,185,11,0.3);
+    border-radius: var(--radius);
+    text-align: left;
+}
+
+.binance-qr-wrap img {
+    display: block;
+    width: 170px;
+    height: auto;
+    border-radius: 10px;
+    background: #fff;
+    padding: 6px;
+    transition: transform 0.25s ease;
+}
+.binance-qr-wrap a:hover img { transform: scale(1.04); }
+
+.binance-info h4 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #f0b90b;
+    margin-bottom: 8px;
+}
+
+.binance-info p {
+    font-size: 13.5px;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.binance-precios {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 18px;
+    margin: 10px 0;
+}
+.binance-precios li {
+    font-size: 13px;
+    color: var(--text);
+    padding: 4px 12px;
+    background: rgba(240,185,11,0.08);
+    border: 1px solid rgba(240,185,11,0.25);
+    border-radius: 16px;
+}
+.binance-precios strong { color: #f0b90b; }
+
+.binance-nota { margin-top: 4px; }
+.binance-nota a { color: var(--green-wa); font-weight: 600; text-decoration: none; }
+.binance-nota a:hover { text-decoration: underline; }
+
 .pricing-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -1518,6 +1577,8 @@ h1,h2,h3 { font-family: 'Space Grotesk', sans-serif; line-height: 1.2; }
     .btn-notify, .btn-vade-buy { width: 100%; justify-content: center; margin-left: 0; }
     .vade-videos-title { font-size: 19px; }
     .pack-total { padding: 24px 18px; }
+    .binance-box { grid-template-columns: 1fr; justify-items: center; text-align: center; }
+    .binance-precios { justify-content: center; }
     .pack-price { font-size: 56px; }
     .pack-list li { font-size: 14px; }
     .maestra-card { padding: 22px 18px; }
