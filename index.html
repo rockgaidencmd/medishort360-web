@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="MEDISHORT360 - Calculadoras clínicas profesionales para enfermería. Herramientas de precisión para UCI, diluciones IV, cálculo de dosis y más.">
-    <title>MEDISHORT360 — Calculadoras Clínicas para Enfermería</title>
+    <meta name="description" content="MEDISHORT360 - Vademécum de Enfermería con 163 medicamentos IV y 4 calculadoras clínicas profesionales. Dosis, diluciones, compatibilidades y alertas de alto riesgo para UCI y emergencias.">
+    <title>MEDISHORT360 — Vademécum de Enfermería y Calculadoras Clínicas</title>
     <link rel="icon" href="icono-192.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
@@ -28,8 +28,8 @@
                 </div>
             </a>
             <nav class="nav">
-                <a href="#apps" class="nav-link">Apps</a>
-                <a href="#vademecum" class="nav-link">Vademécum</a>
+                <a href="#vademecum" class="nav-link nav-link-star">Vademécum <span class="nav-new">NUEVO</span></a>
+                <a href="#apps" class="nav-link">Calculadoras</a>
                 <a href="#precios" class="nav-link">Precios</a>
                 <a href="#contacto" class="nav-link">Contacto</a>
             </nav>
@@ -46,18 +46,113 @@
         <div class="hero-grid-overlay"></div>
         <div class="container hero-content">
             <div class="hero-badge">🩺 Herramientas para Profesionales de Enfermería</div>
-            <h1 class="hero-title">Cálculos clínicos<br><span class="gradient-text">en segundos.</span></h1>
-            <p class="hero-subtitle">4 aplicaciones especializadas. Precisión clínica. Diseñadas por y para enfermería.</p>
+            <h1 class="hero-title">El Vademécum<br><span class="gradient-text">ya está aquí.</span></h1>
+            <p class="hero-subtitle">163 medicamentos IV con dosis, dilución, vigilancia y alertas de alto riesgo. Más 4 calculadoras clínicas. Todo diseñado por y para enfermería.</p>
             <div class="hero-actions">
-                <a href="#apps" class="btn-primary">Ver aplicaciones</a>
-                <a href="#precios" class="btn-outline">Ver precios</a>
+                <a href="https://vademecum-enfermeria.vercel.app/" target="_blank" rel="noopener" class="btn-primary">Abrir Vademécum ↗</a>
+                <a href="#apps" class="btn-outline">Ver calculadoras</a>
             </div>
             <div class="hero-stats">
-                <div class="stat"><span class="stat-num">4</span><span class="stat-label">Apps clínicas</span></div>
+                <div class="stat"><span class="stat-num">163</span><span class="stat-label">Medicamentos</span></div>
                 <div class="stat-divider"></div>
-                <div class="stat"><span class="stat-num">$3</span><span class="stat-label">Por app</span></div>
+                <div class="stat"><span class="stat-num">5</span><span class="stat-label">Apps clínicas</span></div>
                 <div class="stat-divider"></div>
                 <div class="stat"><span class="stat-num">∞</span><span class="stat-label">De por vida</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== VADEMECUM ESTRELLA ===== -->
+    <section id="vademecum" class="vademecum-section">
+        <div class="vademecum-glow"></div>
+        <div class="container vademecum-inner">
+            <div class="vademecum-badge vademecum-badge-live"><span class="live-dot"></span> Ya disponible · App Estrella</div>
+            <img src="icono-192.png" alt="MEDISHORT360" class="vademecum-logo">
+            <h2 class="vademecum-title">Vademécum para<br><span class="vademecum-highlight">Enfermería</span></h2>
+            <p class="vademecum-sub">La referencia farmacológica completa diseñada para el profesional de enfermería. <strong>163 medicamentos IV</strong> con preparación, dilución, velocidad de infusión, vigilancia antes/durante/después y alertas de alto riesgo — todo en tu bolsillo y sin internet.</p>
+
+            <div class="vade-stats">
+                <div class="vade-stat"><span class="vs-num">163</span><span class="vs-label">Medicamentos</span></div>
+                <div class="vade-stat"><span class="vs-num">9</span><span class="vs-label">Categorías</span></div>
+                <div class="vade-stat"><span class="vs-num">4</span><span class="vs-label">Niveles de info</span></div>
+                <div class="vade-stat"><span class="vs-num">🩸</span><span class="vs-label">Hemoterapia</span></div>
+            </div>
+
+            <!-- CAPTURAS REALES DE LA APP -->
+            <div class="vade-gallery">
+                <figure class="vade-shot">
+                    <img src="VADEMECUM_HOME.png" alt="Pantalla de inicio del Vademécum con categorías" loading="lazy">
+                    <figcaption>Inicio y categorías</figcaption>
+                </figure>
+                <figure class="vade-shot vade-shot-lead">
+                    <img src="VADEMECUM_FICHA.png" alt="Ficha de Noradrenalina con alertas de alto riesgo" loading="lazy">
+                    <figcaption>Ficha con alertas de alto riesgo</figcaption>
+                </figure>
+                <figure class="vade-shot">
+                    <img src="VADEMECUM_PREPARACION.png" alt="Preparación, dilución y vigilancia del medicamento" loading="lazy">
+                    <figcaption>Preparación y vigilancia</figcaption>
+                </figure>
+                <figure class="vade-shot">
+                    <img src="VADEMECUM_CATEGORIAS.png" alt="Listado de categorías farmacológicas" loading="lazy">
+                    <figcaption>9 categorías farmacológicas</figcaption>
+                </figure>
+            </div>
+
+            <div class="vademecum-tags">
+                <span class="vtag">💊 163 medicamentos IV</span>
+                <span class="vtag">⚠️ Alertas de alto riesgo</span>
+                <span class="vtag">🧪 Dilución y velocidad</span>
+                <span class="vtag">👁️ Vigilancia por fases</span>
+                <span class="vtag">🩸 Hemoterapia</span>
+                <span class="vtag">📱 Funciona sin internet</span>
+            </div>
+
+            <div class="vademecum-cta">
+                <a href="https://vademecum-enfermeria.vercel.app/" target="_blank" rel="noopener" class="btn-notify">
+                    Abrir Vademécum ↗
+                </a>
+                <a href="https://wa.me/593986198167?text=Hola,%20quiero%20comprar%20el%20Vademécum%20de%20Enfermería%20MEDISHORT360%20($5)." target="_blank" rel="noopener" class="btn-vade-buy">
+                    Comprar acceso — $5 de por vida
+                </a>
+                <p class="vademecum-channel">Canal <strong>MEDISHORT360</strong> · Educación Clínica</p>
+            </div>
+
+            <!-- VIDEOS TIKTOK -->
+            <div class="vade-videos">
+                <h3 class="vade-videos-title">Míralo en acción — medicamentos explicados en TikTok</h3>
+                <p class="vade-videos-sub">Guiones clínicos del canal, medicamento por medicamento.</p>
+                <div class="vade-video-grid">
+                    <a href="https://vt.tiktok.com/ZS4U5CK7T/" target="_blank" rel="noopener" class="vade-video-card">
+                        <span class="vv-play">▶</span>
+                        <span class="vv-name">Norepinefrina</span>
+                        <span class="vv-tag">Vasopresores</span>
+                    </a>
+                    <a href="https://vt.tiktok.com/ZS4U5acTJ/" target="_blank" rel="noopener" class="vade-video-card">
+                        <span class="vv-play">▶</span>
+                        <span class="vv-name">Vancomicina</span>
+                        <span class="vv-tag">Antibióticos</span>
+                    </a>
+                    <a href="https://vt.tiktok.com/ZS4U5momW/" target="_blank" rel="noopener" class="vade-video-card">
+                        <span class="vv-play">▶</span>
+                        <span class="vv-name">Amiodarona</span>
+                        <span class="vv-tag">Antiarrítmicos</span>
+                    </a>
+                    <a href="https://vt.tiktok.com/ZS4U5kEcS/" target="_blank" rel="noopener" class="vade-video-card">
+                        <span class="vv-play">▶</span>
+                        <span class="vv-name">Meropenem</span>
+                        <span class="vv-tag">Antibióticos</span>
+                    </a>
+                    <a href="https://vt.tiktok.com/ZS4U5Mfpk/" target="_blank" rel="noopener" class="vade-video-card">
+                        <span class="vv-play">▶</span>
+                        <span class="vv-name">Furosemida</span>
+                        <span class="vv-tag">Diuréticos</span>
+                    </a>
+                    <a href="https://tiktok.com/@medishort360" target="_blank" rel="noopener" class="vade-video-card vade-video-more">
+                        <span class="vv-play">＋</span>
+                        <span class="vv-name">Ver todos</span>
+                        <span class="vv-tag">@medishort360</span>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -66,9 +161,9 @@
     <section id="apps" class="apps-section">
         <div class="container">
             <div class="section-header">
-                <span class="section-eyebrow">Nuestras Aplicaciones</span>
+                <span class="section-eyebrow">Las Calculadoras</span>
                 <h2 class="section-title">Precisión en cada turno</h2>
-                <p class="section-sub">Herramientas especializadas para los cálculos más críticos de enfermería</p>
+                <p class="section-sub">Y además del Vademécum, 4 herramientas especializadas para los cálculos más críticos de enfermería</p>
             </div>
 
             <div class="apps-grid">
@@ -197,30 +292,6 @@
         </div>
     </section>
 
-    <!-- ===== VADEMECUM ESTRELLA ===== -->
-    <section id="vademecum" class="vademecum-section">
-        <div class="vademecum-glow"></div>
-        <div class="container vademecum-inner">
-            <div class="vademecum-badge">⭐ Próximamente · App Estrella</div>
-            <img src="icono-192.png" alt="MEDISHORT360" class="vademecum-logo">
-            <h2 class="vademecum-title">Vademécum para<br><span class="vademecum-highlight">Enfermería</span></h2>
-            <p class="vademecum-sub">La referencia farmacológica completa diseñada para el profesional de enfermería ecuatoriano. Medicamentos, dosis, vías de administración, compatibilidades y alertas clínicas — todo en tu bolsillo.</p>
-            <div class="vademecum-tags">
-                <span class="vtag">💊 Medicamentos</span>
-                <span class="vtag">⚠️ Alertas clínicas</span>
-                <span class="vtag">🔗 Compatibilidades IV</span>
-                <span class="vtag">📋 Protocolos</span>
-                <span class="vtag">📱 Sin internet</span>
-            </div>
-            <div class="vademecum-cta">
-                <a href="https://wa.me/593986198167?text=Quiero%20ser%20notificado%20del%20Vademécum%20MEDISHORT360" target="_blank" rel="noopener" class="btn-notify">
-                    Notificarme al lanzamiento
-                </a>
-                <p class="vademecum-channel">Canal <strong>MEDISHORT360</strong> · Educación Clínica</p>
-            </div>
-        </div>
-    </section>
-
     <!-- ===== PRECIOS ===== -->
     <section id="precios" class="precios-section">
         <div class="container">
@@ -231,6 +302,29 @@
             </div>
 
             <div class="pricing-grid">
+
+                <!-- VADEMÉCUM (APP ESTRELLA) -->
+                <div class="pricing-card featured pricing-card-vade">
+                    <div class="pricing-badge pricing-badge-vade">⭐ App Estrella</div>
+                    <h3>Vademécum Enfermería</h3>
+                    <p class="pricing-desc">163 medicamentos IV · Referencia clínica</p>
+                    <div class="pricing-price">
+                        <span class="price-amount">$5.00</span>
+                        <span class="price-period">de por vida</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ 163 fichas farmacológicas completas</li>
+                        <li>✓ Preparación, dilución y velocidad</li>
+                        <li>✓ Vigilancia antes / durante / después</li>
+                        <li>✓ Alertas de medicamentos de alto riesgo</li>
+                        <li>✓ Hemoterapia y hemoderivados</li>
+                        <li>✓ Funciona sin internet</li>
+                    </ul>
+                    <a href="https://wa.me/593986198167?text=Hola,%20quiero%20comprar%20el%20Vademécum%20de%20Enfermería%20MEDISHORT360%20($5)." target="_blank" rel="noopener" class="btn-pricing-main">
+                        Comprar — $5.00
+                    </a>
+                    <a href="https://vademecum-enfermeria.vercel.app/" target="_blank" rel="noopener" class="btn-pricing-wa btn-pricing-open">Abrir la app ↗</a>
+                </div>
 
                 <!-- BUNDLE -->
                 <div class="pricing-card featured">
