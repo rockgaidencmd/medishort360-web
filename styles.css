@@ -1094,6 +1094,33 @@ h1,h2,h3 { font-family: 'Space Grotesk', sans-serif; line-height: 1.2; }
     box-shadow: 0 12px 40px rgba(212,168,67,0.45);
 }
 
+.pack-paid {
+    display: block;
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--green-wa);
+    text-decoration: none;
+}
+.pack-paid:hover { text-decoration: underline; }
+
+.pricing-try {
+    display: block;
+    margin-top: 2px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--text-dim);
+    text-decoration: none;
+}
+.pricing-try:hover { color: var(--cyan); }
+
+.vademecum-channel a {
+    color: var(--green-wa);
+    font-weight: 600;
+    text-decoration: none;
+}
+.vademecum-channel a:hover { text-decoration: underline; }
+
 .pack-hint {
     margin-top: 12px;
     font-size: 12px;
