@@ -6,6 +6,11 @@
   const calc = onSale ? 1 : 2, vade = onSale ? 2 : 4;
   const markup = (regular,price) => (onSale ? '<del class="ms-offer-old">$'+regular.toFixed(2)+'</del>' : '')+'<span>$'+price.toFixed(2)+'</span>'+(onSale ? '<span class="ms-offer-until"><span class="ms-offer-badge">50% de descuento</span><br>Hasta el 31 de diciembre de 2026</span>' : '');
   document.querySelectorAll('.app-card').forEach(card => {
+    if (card.dataset.app === 'pct') {
+      const price=card.querySelector('.app-price');if(price)price.textContent='Gratis';
+      const buy=card.querySelector('.btn-pay');if(buy){buy.textContent='Abrir gratis ↗';buy.href='https://pro-2-medishort-360-pct-git-medishorts-74ea97-janner-s-projects.vercel.app/';}
+      return;
+    }
     const price = card.querySelector('.app-price');
     if (price) price.innerHTML = markup(2,calc)+'<small>pago único</small>';
     const buy = card.querySelector('.btn-pay'); if (buy) buy.textContent='Solicitar pago — $'+calc.toFixed(2)+' ↗';
