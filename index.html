@@ -30,12 +30,13 @@
             <nav class="nav">
                 <a href="#vademecum" class="nav-link nav-link-star">Vademécum <span class="nav-new">NUEVO</span></a>
                 <a href="#apps" class="nav-link">Calculadoras</a>
+                <a href="#instalar" class="nav-link">Instalar apps</a>
                 <a href="#precios" class="nav-link">Precios</a>
                 <a href="#contacto" class="nav-link">Contacto</a>
             </nav>
-            <a href="https://tiktok.com/@medishort360" target="_blank" rel="noopener" class="btn-tiktok">
+            <a href="https://tiktok.com/@medishort360" target="_blank" rel="noopener" class="btn-tiktok" aria-label="MEDISHORT360 en TikTok">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg>
-                @medishort360
+                <span>@medishort360</span>
             </a>
         </div>
     </header>
@@ -320,6 +321,34 @@
         </div>
     </section>
 
+
+    <section id="instalar" class="install-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">Llévalas contigo</span>
+                <h2 class="section-title">Instala tus apps</h2>
+                <p class="section-sub">Ábrelas en el navegador y añádelas a tu pantalla de inicio. Prueba 3 usos gratuitos; después activa el acceso con tu código.</p>
+            </div>
+            <div class="install-grid">
+                <article class="install-card">
+                    <span class="install-icon" aria-hidden="true">💉</span>
+                    <h3>Dosis y Goteo IV</h3>
+                    <p>Cálculo de dosis en mL, flujo y goteo en una app.</p>
+                    <p class="install-status">Próximamente para instalar</p>
+                    <a class="btn-primary" data-install-app="dosis" aria-disabled="true" tabindex="-1" target="_blank" rel="noopener">Próximamente</a>
+                </article>
+                <article class="install-card">
+                    <span class="install-icon" aria-hidden="true">📚</span>
+                    <h3>Vademécum Enfermería</h3>
+                    <p>163 fichas con preparación, vigilancia y alertas de alto riesgo.</p>
+                    <p class="install-status">Próximamente para instalar</p>
+                    <a class="btn-primary" data-install-app="vademecum" aria-disabled="true" tabindex="-1" target="_blank" rel="noopener">Próximamente</a>
+                </article>
+            </div>
+            <p class="install-help">Android y computadora: abre la app en Chrome o Edge y pulsa Instalar. En iPhone: abre en Safari, toca Compartir y elige Añadir a pantalla de inicio. La primera apertura y la activación necesitan internet.</p>
+        </div>
+    </section>
+
     <!-- ===== PRECIOS ===== -->
     <section id="precios" class="precios-section">
         <div class="container">
@@ -539,6 +568,7 @@
         <span class="whatsapp-tooltip">¿Preguntas? Escríbenos</span>
     </a>
 
+    <script src="install-links.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

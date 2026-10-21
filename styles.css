@@ -1594,3 +1594,6 @@ h1,h2,h3 { font-family: 'Space Grotesk', sans-serif; line-height: 1.2; }
         transition-duration: 0.01ms !important;
     }
 }
+
+/* Instalación de apps independientes */
+.install-section{padding:80px 0;background:#07131f}.install-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;max-width:900px;margin:32px auto}.install-card{padding:32px;border:1px solid #234759;border-radius:20px;background:#0d1e2c}.install-icon{font-size:36px}.install-card h3{font-size:24px;margin:16px 0}.install-card p{line-height:1.6;margin-bottom:20px;color:#bfd0dd}.install-card .install-status{color:#72e5c5;font-size:14px}.install-card a{display:inline-flex}.install-card a[aria-disabled="true"]{opacity:.55;cursor:default}.install-help{max-width:900px;margin:24px auto 0;line-height:1.7;color:#a9becd}@media(max-width:640px){.install-grid{grid-template-columns:1fr}.install-section{padding:56px 0}.install-card{padding:24px}}
