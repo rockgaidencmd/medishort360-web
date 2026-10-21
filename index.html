@@ -9,6 +9,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 <style>
+.payment-once{max-width:900px;margin:18px auto 28px;line-height:1.7;color:#c8dae6}
+.payment-regions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;text-align:left;margin:28px 0}
+.payment-region{background:#0c1c2c;border:1px solid #25465b;border-radius:16px;padding:26px;min-width:0}
+.payment-region h4,.payment-activation h4{font-size:21px;color:#fff;margin:0 0 16px}
+.payment-region p,.payment-region li,.payment-activation p{color:#c1d1df;line-height:1.7;font-size:15px}
+.payment-region ol,.payment-options{padding-left:22px;margin:16px 0 22px}.payment-region li{margin-bottom:12px}
+.payment-method-buttons{display:flex;flex-direction:column;gap:12px}.payment-region a{white-space:normal;text-align:center}
+.payment-activation{background:#0a2427;border:1px solid #24615b;border-radius:16px;padding:26px;text-align:left;margin:24px 0}
+.payment-activation p+p{margin-top:12px}
+@media(max-width:700px){.payment-regions{grid-template-columns:1fr}.payment-region,.payment-activation{padding:22px}}
 .pack-price-old{text-decoration:none}
 .ms-offer-old{text-decoration:line-through;color:#9cafbd;font-size:.65em;margin-right:10px}
 .ms-offer-badge{display:inline-block;background:#123e32;color:#80ffd2;border:1px solid #2b8065;border-radius:999px;padding:5px 10px;font-size:13px;font-weight:700}
@@ -466,25 +476,40 @@
             </div>
 
             <!-- CÓMO COMPRAR -->
-            <div class="how-to-buy">
-                <h3>¿Cómo comprar?</h3>
-                <div class="steps">
-                    <div class="step">
-                        <span class="step-num">1</span>
-                        <p>Solicita el enlace de pago para el producto elegido por WhatsApp</p>
-                    </div>
-                    <div class="step-arrow">→</div>
-                    <div class="step">
-                        <span class="step-num">2</span>
-                        <p>Confirma el importe y el medio de pago disponible antes de transferir</p>
-                    </div>
-                    <div class="step-arrow">→</div>
-                    <div class="step">
-                        <span class="step-num">3</span>
-                        <p>Envía el <strong>comprobante por WhatsApp</strong> y recibe tu código</p>
-                    </div>
+            <div class="how-to-buy" id="metodos-de-pago">
+                <h3>Un solo pago. Sin mensualidades.</h3>
+                <p class="payment-once"><strong>Pagas una sola vez por la app o el paquete que elijas.</strong> No es una suscripción: no hay mensualidades, renovaciones ni cobros periódicos. La activación corresponde al producto comprado y a un dispositivo.</p>
+                <div class="payment-regions">
+                    <section class="payment-region" aria-labelledby="pago-ecuador">
+                        <h4 id="pago-ecuador">🇪🇨 Si estás en Ecuador</h4>
+                        <p><strong>Transferencia a cuenta bancaria.</strong> Solicita los datos de la cuenta y confirma la app y el importe antes de transferir.</p>
+                        <ol>
+                            <li>Elige tu app o paquete y solicita los datos bancarios por WhatsApp.</li>
+                            <li>Realiza un único pago y envía el comprobante.</li>
+                            <li>Después de verificar el pago, recibes tu código y las instrucciones de activación.</li>
+                        </ol>
+                        <a class="btn-pricing-secondary" href="https://wa.me/593986198167?text=Hola%2C%20estoy%20en%20Ecuador.%20Quiero%20comprar%20una%20app%20MEDISHORT360%20mediante%20transferencia%20bancaria.%20Ind%C3%ADquenme%20los%20datos%20de%20la%20cuenta%20y%20el%20importe%20de%20pago%20%C3%BAnico." target="_blank" rel="noopener">Solicitar datos bancarios ↗</a>
+                    </section>
+                    <section class="payment-region" aria-labelledby="pago-exterior">
+                        <h4 id="pago-exterior">🌎 Si estás fuera de Ecuador</h4>
+                        <p>Elige una opción de <strong>pago único</strong>. Antes de pagar, confirma el producto y revisa el importe final del método elegido.</p>
+                        <ul class="payment-options">
+                            <li><strong>Binance Pay:</strong> pago en USDT desde tu cuenta de Binance. Usa el QR de abajo o solicita el enlace; después envía tu comprobante para verificarlo.</li>
+                            <li><strong>PayPhone:</strong> solicita el enlace de cobro y revisa las opciones de pago disponibles para ti antes de confirmar.</li>
+                            <li><strong>Lemon Squeezy:</strong> solicita el enlace de compra y completa el pago en su página de cobro. Revisa el total antes de finalizar.</li>
+                        </ul>
+                        <div class="payment-method-buttons">
+                            <a class="btn-pricing-secondary" href="https://wa.me/593986198167?text=Hola%2C%20estoy%20fuera%20de%20Ecuador%20y%20quiero%20pagar%20una%20app%20MEDISHORT360%20con%20PayPhone.%20Env%C3%ADenme%20el%20enlace%20de%20pago%20%C3%BAnico%20y%20confirmen%20el%20importe." target="_blank" rel="noopener">Solicitar enlace de PayPhone ↗</a>
+                            <a class="btn-pricing-secondary" href="https://wa.me/593986198167?text=Hola%2C%20estoy%20fuera%20de%20Ecuador%20y%20quiero%20comprar%20una%20app%20MEDISHORT360%20con%20Lemon%20Squeezy.%20Env%C3%ADenme%20el%20enlace%20de%20compra%20de%20pago%20%C3%BAnico." target="_blank" rel="noopener">Solicitar enlace de Lemon Squeezy ↗</a>
+                        </div>
+                    </section>
                 </div>
-                <p class="buy-note">💳 Los enlaces de cobro anteriores están pendientes de actualización. Solicita el método y monto vigente por WhatsApp antes de pagar. Tras pagar, envía tu comprobante para recibir el código de activación. ¿Aún no te decides? La <strong>App Maestra</strong> tiene dos calculadoras gratis para que la pruebes antes.</p>
+                <div class="payment-activation">
+                    <h4>¿Cómo recibes el acceso?</h4>
+                    <p>Una vez confirmado el pago, recibes el código de la app comprada y lo introduces en su pantalla de activación. En los pagos por transferencia o Binance, envía el comprobante por WhatsApp para su revisión. Conserva tu comprobante y tu código.</p>
+                    <p><strong>Acceso permanente en el dispositivo activado, sin volver a pagar cada mes.</strong> Si cambias de equipo o borras los datos de la app o del navegador, contáctanos para revisar la reactivación.</p>
+                    <p>Instalar la app es gratis. Dosis y Goteo IV comparten 3 usos de prueba; Vademécum tiene sus propias 3 consultas de prueba. La cuarta acción requiere activar el producto. La calculadora de Porcentajes es gratuita.</p>
+                </div>
 
                 <!-- BINANCE PAY -->
                 <div class="binance-box">
@@ -494,7 +519,7 @@
                         </a>
                     </div>
                     <div class="binance-info">
-                        <h4>🟡 ¿Prefieres cripto? Aceptamos Binance Pay</h4>
+                        <h4>🟡 Desde fuera de Ecuador: Binance Pay</h4>
                         <p>Escanea el QR con tu app de Binance — o tócalo desde el celular — y envía el monto en <strong>USDT</strong>:</p>
                         <ul class="binance-precios">
                             <li><strong>2 USDT</strong> — Dosis y Goteo IV</li>
@@ -503,7 +528,7 @@
                             <li><strong>3 USDT</strong> — App Maestra</li>
                             <li><strong>5 USDT</strong> — Pack Total</li>
                         </ul>
-                        <p class="binance-nota">Antes de transferir confirma el importe en USDT y la red de pago por WhatsApp. Luego envía tu <strong>comprobante</strong> y recibe tu código. Si prefieres, <a href="https://wa.me/593986198167?text=Hola,%20quiero%20pagar%20con%20Binance%20Pay.%20Envíenme%20el%20enlace%20de%20pago." target="_blank" rel="noopener">pídenos un enlace de pago directo</a>.</p>
+                        <p class="binance-nota">Confirma el importe en USDT y utiliza Binance Pay; si te indican una transferencia por red, confirma primero la red y el destino por WhatsApp. Es un pago único, sin renovaciones. Luego envía tu <strong>comprobante</strong> y recibe tu código. Si prefieres, <a href="https://wa.me/593986198167?text=Hola,%20quiero%20pagar%20con%20Binance%20Pay.%20Envíenme%20el%20enlace%20de%20pago." target="_blank" rel="noopener">pídenos un enlace de pago directo</a>.</p>
                     </div>
                 </div>
             </div>
