@@ -12,7 +12,7 @@
         button.removeAttribute('aria-disabled');
         button.removeAttribute('tabindex');
         button.textContent = 'Abrir e instalar ↗';
-        button.closest('.install-card').querySelector('.install-status').textContent = 'Instalación gratuita · 3 usos de prueba';
+        button.closest('.install-card').querySelector('.install-status').textContent = button.dataset.installApp === 'pct' ? 'Gratis · sin activación' : 'Instalación gratuita · 3 usos de prueba';
       });
     }).catch(() => { /* Mantener los botones deshabilitados si falta configuración. */ });
   document.querySelectorAll('[data-install-app]').forEach(button => {
